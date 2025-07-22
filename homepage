@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Richmond Gyasi - Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Hi, I'm Richmond Gyasi</h1>
+        <p>A Frontend Software Developer passionate about building impactful digital experiences.</p>
+        <a href="projects.html" class="btn">View My Work</a>
+      </div>
+    </section>
+
+    <section class="highlights">
+      <div class="container">
+        <div class="highlight-box">
+          <i class="fas fa-laptop-code"></i>
+          <h2>Frontend Development</h2>
+          <p>Clean, responsive, and interactive user interfaces built with modern web technologies.</p>
+        </div>
+        <div class="highlight-box">
+          <i class="fas fa-seedling"></i>
+          <h2>Agritech Projects</h2>
+          <p>Tech solutions to improve farming practices and support sustainable development in Ghana.</p>
+        </div>
+        <div class="highlight-box">
+          <i class="fas fa-book-reader"></i>
+          <h2>EdTech Platforms</h2>
+          <p>Tools that support students’ learning journeys and promote academic success.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bio">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>Hi! I'm Richmond Gyasi, a passionate frontend software developer from Ghana. I enjoy turning ideas into reality through clean, responsive design and interactive user interfaces. With a strong attention to detail and a love for learning, I aim to build impactful digital experiences that solve real-world problems.</p>
+        <p>I have a particular interest in using technology to improve education and agriculture—two sectors that are vital to Ghana's future. From developing apps that support fish farmers to building platforms that help students succeed academically, I thrive when I'm solving problems that matter.</p>
+        <p>When I'm not coding, you’ll find me exploring new technologies, mentoring peers, or collaborating on community projects. I look forward to building with you!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Richmond Gyasi. All rights reserved.</p>
+  </footer>
+</body>
+</html>
