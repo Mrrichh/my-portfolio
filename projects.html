@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Richmond Gyasi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f0f4f8;
+      color: #1f1f1f;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background-color: #2c5364;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffc107;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .project {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+    }
+
+    .project img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project-info {
+      padding: 20px;
+    }
+
+    .project-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .project-desc {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      background-color: #2c5364;
+      color: white;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div><strong>Richmond Gyasi</strong></div>
+    <div>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 data-aos="fade-up">My Projects</h1>
+    <div class="projects-grid">
+      <div class="project" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://source.unsplash.com/800x600/?coding,web" alt="Project 1">
+        <div class="project-info">
+          <div class="project-title">Portfolio Website</div>
+          <div class="project-desc">A modern portfolio site built using HTML, CSS, and AOS animation. Features responsive design and clean UI.</div>
+        </div>
+      </div>
+      <div class="project" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://source.unsplash.com/800x600/?app,ui" alt="Project 2">
+        <div class="project-info">
+          <div class="project-title">Agritech Dashboard</div>
+          <div class="project-desc">A smart dashboard interface for monitoring aquaculture data and farming analytics in real-time.</div>
+        </div>
+      </div>
+      <div class="project" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://source.unsplash.com/800x600/?technology,frontend" alt="Project 3">
+        <div class="project-info">
+          <div class="project-title">Weather App UI</div>
+          <div class="project-desc">A sleek weather app frontend with API integration, animated transitions, and light/dark modes.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Richmond Gyasi | All rights reserved.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>
