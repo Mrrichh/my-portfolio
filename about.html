@@ -2,39 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Richmond Gyasi - Frontend Developer</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Richmond Gyasi</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
   <header>
-    <nav>
+    <div class="container nav-container">
+      <div class="logo">Richmond Gyasi</div>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
         <li><a href="skills.html">Skills</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </nav>
+    </div>
   </header>
 
-  <main class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h2>Hello, I'm Richmond Gyasi</h2>
-        <h3>Frontend Software Developer</h3>
-        <p>I craft user-friendly, beautiful websites that solve real problems. Passionate about tech, design, and continuous growth.</p>
-        <a href="projects.html" class="btn">View My Projects</a>
+  <main>
+    <section class="about-section" data-aos="fade-up">
+      <div class="container">
+        <h1 style="text-align: center; margin-bottom: 2rem;">About Me</h1>
+        <div class="about-content" style="display: flex; flex-direction: column-reverse; gap: 2rem; align-items: center;">
+          <div class="about-text" style="max-width: 700px; text-align: center;">
+            <p>
+              I’m Richmond Gyasi, a frontend software developer passionate about building stunning and user-centered digital experiences. I enjoy solving real-world problems using code, especially in agriculture and education. I continuously push myself to learn and collaborate on innovative projects that bring lasting impact to communities.
+              <br><br>
+              When I’m not writing code, I love exploring new technologies, mentoring others, and contributing to open-source or community-led initiatives.
+            </p>
+          </div>
+          <div class="about-image">
+            <img src="images/richmond-profile.jpg" alt="Richmond Gyasi" style="width: 250px; height: 250px; border-radius: 50%; object-fit: cover; border: 4px solid var(--accent); box-shadow: var(--shadow);" />
+          </div>
+        </div>
       </div>
-      <div class="hero-image">
-        <img src="images/richmond-profile.jpg" alt="Richmond Gyasi" />
-      </div>
-    </div>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Richmond Gyasi. All rights reserved.</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
